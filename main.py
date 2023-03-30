@@ -1,5 +1,6 @@
-import openai
 import streamlit as st
+import openai
+
 
 # 设置 OpenAI API 密钥
 openai.api_key = st.secrets["GPTKey"]
