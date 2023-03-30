@@ -2,7 +2,7 @@ import openai
 import streamlit as st
 
 # 设置 OpenAI API 密钥
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = st.secrets["GPTKey"]
 
 # 创建一个函数，使用 OpenAI 的 GPT-3.5 模型生成一份简历
 def generate_resume(personal_info, resume_description):
